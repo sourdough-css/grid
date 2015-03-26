@@ -1,0 +1,102 @@
+<html>
+  <head>
+    <title>Test Grid</title>
+    <link rel="stylesheet" href="../build/grid.css" media="screen" charset="utf-8">
+    <style media="screen">
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .grid {
+        counter-reset: col;
+      }
+
+      .grid__item {
+        margin-bottom: 10px;
+        counter-increment: col;
+        position: relative;
+      }
+
+      .grid__item:after {
+        content: counter(col);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        font-size: 30px;
+        color: #333;
+        margin-top: -15px;
+      }
+
+      .grid__item > div {
+        background-color: #ccc;
+        height: 100px;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="grid">
+        <div class="grid__item">
+          <div></div>
+        </div>
+      </div>
+      <div class="grid">
+        <div class="grid__item width--6of12">
+          <div></div>
+        </div>
+        <div class="grid__item width--6of12">
+          <div></div>
+        </div>
+      </div>
+      <div class="grid">
+        <div class="grid__item desk-width--4of12">
+          <div></div>
+        </div>
+        <div class="grid__item desk-width--4of12">
+          <div></div>
+        </div>
+        <div class="grid__item desk-width--4of12">
+          <div></div>
+        </div>
+      </div>
+      <div class="grid">
+        <div class="grid__item tablet-width--6of12 desk-width--3of12">
+          <div></div>
+        </div>
+        <div class="grid__item tablet-width--6of12 desk-width--3of12">
+          <div></div>
+        </div>
+        <div class="grid__item tablet-width--6of12 desk-width--3of12">
+          <div></div>
+        </div>
+        <div class="grid__item tablet-width--6of12 desk-width--3of12">
+          <div></div>
+        </div>
+      </div>
+      <div class="grid grid--full">
+        <div class="grid__item tablet-width--6of12 desk-width--4of12">
+          <div></div>
+        </div>
+        <div class="grid__item tablet-width--6of12 desk-width--4of12">
+          <div></div>
+        </div>
+        <div class="grid__item desk-width--4of12">
+          <div></div>
+        </div>
+      </div>
+      <div class="grid grid--reversed">
+        <div class="grid__item tablet-width--4of12">
+          <div></div>
+        </div>
+        <div class="grid__item tablet-width--4of12">
+          <div></div>
+        </div>
+        <div class="grid__item tablet-width--4of12">
+          <div></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

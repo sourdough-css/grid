@@ -1,0 +1,29 @@
+{
+  "name": "sourdough-grid",
+  "description": "Sourdough CSS grid",
+  "version": "0.2.1",
+  "files": [
+    "index.styl",
+    "lib"
+  ],
+  "dependencies": {
+
+  },
+  "devDependencies": {
+    "sourdough-preprocessor": "^0.4.0"
+  },
+  "scripts": {
+    "build": "sourdough index.styl build/grid.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/sourdough-css/grid.git"
+  },
+  "keywords": [
+    "grid",
+    "browser",
+    "css",
+    "sourdough",
+    "style"
+  ]
+}

@@ -1,0 +1,169 @@
+//
+// GRID STYLES
+// ==================
+// Sourdough CSS grid system
+//
+
+//
+// BASE SETTINGS
+//
+
+:root
+  --grid-gutter: 20px
+  --grid-max-width: 980px
+
+//
+// BASE BREAKPOINTS
+//
+
+@custom-media --tablet screen and (min-width: 550px)
+@custom-media --desktop screen and (min-width: 960px)
+
+//
+// GRID CONTAINER
+//
+
+.container
+  max-width: var(--grid-max-width)
+  margin: 0 auto
+
+//
+// GRID ROW
+//
+
+.grid
+  margin-left: calc(0 - var(--grid-gutter))
+  &:after
+    content: ""
+    display: table
+    clear: both
+
+// NO-GUTTERS
+
+.grid--full
+  margin-left: 0
+  .grid__item
+    padding-left: 0
+
+// REVERSE ORDER
+
+.grid--reversed
+  .grid__item
+    float: right
+
+//
+// GRID COLUMN
+//
+
+.grid__item
+  box-sizing: border-box
+  display: block
+  float: left
+  width: 100%
+  padding-left: var(--grid-gutter)
+  letter-spacing: normal
+
+//
+// GRID COLUMN WIDTHS
+//
+
+.width--1of12
+  width: calc(100% / 12)
+
+.width--2of12
+  width: calc(100% / 12 * 2)
+
+.width--3of12
+  width: calc(100% / 12 * 3)
+
+.width--4of12
+  width: calc(100% / 12 * 4)
+
+.width--5of12
+  width: calc(100% / 12 * 5)
+
+.width--6of12
+  width: calc(100% / 12 * 6)
+
+.width--7of12
+  width: calc(100% / 12 * 7)
+
+.width--8of12
+  width: calc(100% / 12 * 8)
+
+.width--9of12
+  width: calc(100% / 12 * 9)
+
+.width--10of12
+  width: calc(100% / 12 * 10)
+
+.width--11of12
+  width: calc(100% / 12 * 11)
+
+@media (--tablet)
+  .tablet-width--1of12
+    width: calc(100% / 12)
+
+  .tablet-width--2of12
+    width: calc(100% / 12 * 2)
+
+  .tablet-width--3of12
+    width: calc(100% / 12 * 3)
+
+  .tablet-width--4of12
+    width: calc(100% / 12 * 4)
+
+  .tablet-width--5of12
+    width: calc(100% / 12 * 5)
+
+  .tablet-width--6of12
+    width: calc(100% / 12 * 6)
+
+  .tablet-width--7of12
+    width: calc(100% / 12 * 7)
+
+  .tablet-width--8of12
+    width: calc(100% / 12 * 8)
+
+  .tablet-width--9of12
+    width: calc(100% / 12 * 9)
+
+  .tablet-width--10of12
+    width: calc(100% / 12 * 10)
+
+  .tablet-width--11of12
+    width: calc(100% / 12 * 11)
+
+@media (--desktop)
+  .desk-width--1of12
+    width: calc(100% / 12)
+
+  .desk-width--2of12
+    width: calc(100% / 12 * 2)
+
+  .desk-width--3of12
+    width: calc(100% / 12 * 3)
+
+  .desk-width--4of12
+    width: calc(100% / 12 * 4)
+
+  .desk-width--5of12
+    width: calc(100% / 12 * 5)
+
+  .desk-width--6of12
+    width: calc(100% / 12 * 6)
+
+  .desk-width--7of12
+    width: calc(100% / 12 * 7)
+
+  .desk-width--8of12
+    width: calc(100% / 12 * 8)
+
+  .desk-width--9of12
+    width: calc(100% / 12 * 9)
+
+  .desk-width--10of12
+    width: calc(100% / 12 * 10)
+
+  .desk-width--11of12
+    width: calc(100% / 12 * 11)

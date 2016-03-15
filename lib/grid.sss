@@ -1,59 +1,56 @@
-//
-// GRID STYLES
-// ==================
-// Sourdough CSS grid system
-//
+/*
+  GRID STYLES
+  ==================
+  Sourdough CSS grid system
+ */
 
-//
-// BASE SETTINGS
-//
+/*
+  BASE SETTINGS
+ */
 
 :root
   --grid-gutter: 20px
   --grid-max-width: 980px
 
-//
-// BASE BREAKPOINTS
-//
+/*
+  BASE BREAKPOINTS
+ */
 
 @custom-media --tablet screen and (min-width: 550px)
 @custom-media --desktop screen and (min-width: 960px)
 
-//
-// GRID CONTAINER
-//
+/*
+  GRID CONTAINER
+ */
 
 .container
   max-width: var(--grid-max-width)
   margin: 0 auto
 
-//
-// GRID ROW
-//
-
+/*
+  GRID ROW
+ */
+ 
 .grid
   margin-left: calc(0 - var(--grid-gutter))
-  &:after
-    content: ""
-    display: table
-    clear: both
 
-// NO-GUTTERS
+.grid:after
+  content: ""
+  display: table
+  clear: both
 
 .grid--full
   margin-left: 0
   .grid__item
     padding-left: 0
 
-// REVERSE ORDER
-
 .grid--reversed
   .grid__item
     float: right
 
-//
-// GRID COLUMN
-//
+/*
+  GRID COLUMN
+ */
 
 .grid__item
   box-sizing: border-box
@@ -61,10 +58,6 @@
   float: left
   width: 100%
   padding-left: var(--grid-gutter)
-
-//
-// GRID COLUMN WIDTHS
-//
 
 .width--1of12
   width: calc(100% / 12)

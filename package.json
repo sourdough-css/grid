@@ -3,17 +3,18 @@
   "description": "Sourdough CSS grid",
   "version": "0.1.0",
   "files": [
-    "index.styl",
-    "lib"
+    "lib",
+    "build"
   ],
+  "style": "lib/grid.sss",
   "dependencies": {
 
   },
   "devDependencies": {
-    "sourdough-preprocessor": "^0.4.0"
+    "sourdough-preprocessor": "^2.0.0"
   },
   "scripts": {
-    "build": "sourdough index.styl build/grid.css"
+    "build": "sourdough ./lib/grid.sss build/grid.css"
   },
   "repository": {
     "type": "git",

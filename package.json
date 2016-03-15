@@ -1,15 +1,13 @@
 {
   "name": "sourdough-grid",
   "description": "Sourdough CSS grid",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "files": [
     "lib",
     "build"
   ],
   "style": "lib/grid.sss",
-  "dependencies": {
-
-  },
+  "dependencies": {},
   "devDependencies": {
     "sourdough-preprocessor": "^2.0.0"
   },
